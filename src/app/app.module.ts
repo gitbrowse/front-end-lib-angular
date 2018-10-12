@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.component';
 import { AsideBarComponent } from './components/aside-bar/aside-bar.component';
 import { MainContainerComponent } from './components/main-container/main-container.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './router/app-routing.module';
 import { UploadComponent } from './pages/upload/upload.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
