@@ -1,0 +1,28 @@
+<div class="guide-container">
+  <div class="base-row">
+    <label class="title" #label>*ngFor:</label>
+    <span #list *ngFor="let item of list" (click)="listClick(item, list, $event)" [ngStyle]="labelStyle()">
+      <ng-container *ngIf="isShowList">
+        {{ item.name + '-' + item.value }}
+      </ng-container>
+    </span>
+  </div>
+
+  <div class="base-row">
+    <label class="title">ngModel:</label>
+    <input nz-input type="text" [(ngModel)]="model1" style="width: 50px"/> -
+    <input nz-input type="text" [(ngModel)]="model1" style="width: 50px"/>
+  </div>
+
+  <div class="base-row">
+    <label class="title">component:</label><app-test prefix="pre" suffix='suf'>solt</app-test>
+  </div>
+
+  <div class="base-row">
+    <label class="title">pipe:</label>{{ 12 | square}}
+  </div>
+
+  <div class="base-row">
+    <button nz-button (click)="showList()">show-list</button>
+  </div>
+</div>
